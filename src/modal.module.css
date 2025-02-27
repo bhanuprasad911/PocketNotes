@@ -1,0 +1,120 @@
+/* Full-screen overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Centered modal */
+.modal {
+    background: white;
+    padding: 20px;
+    width: 40%;
+    border-radius: 10px;
+    /* text-align: center; */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    height: 33%;
+    padding: 2rem;
+
+}
+
+/* Input styling */
+.input {
+    width: 70%;
+    padding: 1rem;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.colors{
+    /* display: inline; */
+    position: relative;
+    left: 20%;
+    bottom: 13%;
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid grey; */
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: 3%;
+
+}
+label{
+    font-size: 1.2rem;
+}
+.colors>div{
+    width: 10%;
+    height: 100%;
+    border-radius: 50%;
+    /* background-color: black; */
+    padding: 1.2rem;
+    /* margin:  */
+    cursor: pointer;
+
+}
+.colors>div:focus{
+    border: 1px solid blue;
+}
+.color1{
+    background-color: rgb(180, 140, 250);
+}
+.color2{
+    background-color: rgb(255, 120, 241);
+}
+.color3{
+    background-color: rgb(68, 231, 252);
+}
+.color4{
+    background-color: rgb(242, 150, 119);
+}
+.color5{
+    background-color: rgb(0, 72, 255);
+}
+.color6{
+    background-color: rgb(102, 145, 255);
+}
+
+/* Close button */
+.closeButton {
+    background-color: rgb(0, 30, 140);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    left: 90%;
+
+}
+@media screen and (max-width:1500px){
+    .modal{
+        width: 60%;
+    }
+
+}
+@media screen and (max-width:1000px){
+    .modal{
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width:700px){
+    .modal{
+        width: 90%;
+    }
+    .colors{
+        top: 3%;
+        left: 0%;
+
+    }
+}

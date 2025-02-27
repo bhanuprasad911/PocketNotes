@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto';
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    font-family: 'roboto';
+
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.noteHead{
+    width: 100%;
+    height: 11%;
+    background-color: rgb(0, 30, 140);
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    gap: 2%;
+}
+.rightgroupimg{
+    height: 100%;
+    width: 6%;
+    border-radius:50% ;
+    padding: 1.2rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    /* gap: 5%; */
+}
+.rightgroupHeading{
+    color: white;
+}
+.nogroup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blue; */
+    flex-direction: column;
+    text-align: justify;
+    gap: 1rem;
+}
+.innergroup:focus{
+    background-color: rgba(128, 128, 128,0.2);
+}
+.innergroup{
+    display: flex;
+    padding: 0.5rem;
+    width: 100%;
+    /* border: 1px solid black; */
+    justify-content: start;
+    align-items: center;
+    gap: 5%;
+    cursor: pointer;
+    background: none;
+    border: none;
+    border-radius: 10px;
+
+}
+.noteBody::-webkit-scrollbar {
+    width: 10px; /* Scrollbar width */
+    /* background-color: green; */
+}
+.noteBody::-webkit-scrollbar-track {
+    background: rgb(217, 217, 217); 
+}
+.noteBody::-webkit-scrollbar-thumb {
+    background: white; /* Scrollbar color */
+    border-radius: 10px;
+    height: 10px;
+    /* margin: 100%; */
+    /* padding: 10%; */
+    border-left: 2px solid rgb(217, 217, 217);
+    border-right: 2px solid rgb(217, 217, 217);
+}
+.noteBody{
+    height: 67%;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+.groupHeading{
+    color: black;
+}
+.newNote{
+    height: 22%;
+    width: 100%;
+    background-color: rgb(0, 30, 140);
+    border-bottom-left-radius: 10px;
+    padding: 1rem;
+}
+.newNote>textarea{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: large;
+    padding-right: 7%;
+    /* margin-right:2rem ; */
+    /* padding: 10%; */
+}
+.notesBody{
+    /* width: 100%; */
+    padding: 1rem;
+    padding-bottom: 0.2rem;
+    background-color: white;
+    box-shadow: 0px 0px 10px grey;
+    margin: 1.5% 2% 0% 2%;
+}
+.notestext {
+    white-space: pre-wrap;  /* Ensures text wraps and respects line breaks */
+   
+  }
+  
+.sendButton{
+    position: absolute;
+    /* bottom: 30%; */
+    right: 5%;
+    bottom: 5%;
+    cursor: pointer;
+    color: blue;
+}
+.groupimg{
+    height: 100%;
+    width: 15%;
+    border-radius:50% ;
+    padding: 1.2rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.left{
+    width: 30%;
+    height: 100%;
+    box-shadow: 0px 0px 10px grey;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.notesLogo{
+    height: 70%;
+    width: 40%;
+}
+.groups{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    overflow: auto;
+    position: relative;
+}
+.groups::-webkit-scrollbar {
+    width: 10px; /* Scrollbar width */
+    /* background-color: green; */
+}
+.groups::-webkit-scrollbar-track {
+    background: rgb(217, 217, 217); 
+}
+.groups::-webkit-scrollbar-thumb {
+    background: white; /* Scrollbar color */
+    border-radius: 10px;
+    height: 10px;
+    /* margin: 100%; */
+    /* padding: 10%; */
+    border-left: 2px solid rgb(217, 217, 217);
+    border-right: 2px solid rgb(217, 217, 217);
+}
+.heading{
+    padding: 1rem;
+}
+.groups:not(:empty) .button {
+    position: sticky;
+    bottom: 10%;
+    left: 70%;
+}
+.noteDate{
+    text-align: end;
+    font-size: small;
+    color: rgb(54, 54, 54);
+    font-weight: 900;
+    position: relative;
+    right: 2%;
+    top: 2%;
+}
+.noteFooter{
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.list{
+    /* text-align: end; */
+    list-style:disc;
+    text-align: center;
+    margin-bottom: 0.1rem;
+
+    /* display: inline-block; */
+}
+.list>li{
+    padding: 0.2rem;
+}
+
+.sendButtonActive {
+    filter: invert(39%) sepia(94%) saturate(7500%) hue-rotate(220deg) brightness(100%) contrast(100%);
+    position: absolute;
+    /* bottom: 30%; */
+    right: 5%;
+    bottom: 5%;
+    cursor: pointer;
+    /* color: blue; */
+  }
+  
+  .sendButtonDisabled {
+    filter: grayscale(100%) brightness(70%);
+    position: absolute;
+    /* bottom: 30%; */
+    right: 5%;
+    bottom: 5%;
+    cursor: pointer;
+    color: blue;
+  }
+.button{
+    background-color: rgb(21, 0, 140);
+    /* padding: 1.5rem;
+     */
+     height: 10%;
+     width: 15%;
+     /* padding: 8%; */
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    color:white;
+    position: absolute;
+    /* bottom: 100%;
+     */
+     top: 85%;
+    left: 70%;
+    font-size: 3.5rem;
+    text-align: center;
+}
+.right{
+    /* border: 1px solid black; */
+    width: 85%;
+    width: 100%;
+    background-color: rgb(218, 229, 245);
+}
+/* Left panel (group list) */
+.left {
+    width: 25%;
+    height: 100%;
+    box-shadow: 0px 0px 10px grey;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+/* Right panel (notes) - Hidden by default */
+.right {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(218, 229, 245);
+}
+
+/* When showRight is active, display right section */
+.showRight .right {
+    display: flex;
+}
+
+/* Hide left section only on small screens when right section is active */
+@media screen and (max-width: 500px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+    }
+
+    .right {
+        display: none;
+        width: 100%;
+        height: 100vh;
+    }
+
+    /* Show right panel and hide left when showRight is active */
+    .showRight .left {
+        display: none;
+    }
+
+    .showRight .right {
+        display: flex;
+    }
+
+    .backButton {
+        /* position: absolute;
+        top: 10px;
+        left: 10px; */
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: white;
+        visibility: visible;
+        /* margin: 2rem; */
+        font-weight: 500;
+    }
+    .rightgroupimg{
+        width: 15%;
+        height: 80%;
+    }
+    li{
+        margin-left: 1.5rem;
+    }
+}
+
+/* On larger screens, always show both left and right panels */
+@media screen and (min-width: 501px) {
+    .right {
+        display: flex;
+        width: 75%;
+    }
+    .backButton{
+        visibility: hidden;
+    }
+}
+
