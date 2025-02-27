@@ -3,7 +3,7 @@ import firstImage from '/image-removebg-preview 1.png';
 import sendImg from '/Vector.png';
 import Modal from './Modal';
 import style from './app.module.css';
-import { GroupContext } from './context/GroupContext.jsx';
+import { GroupContext } from './context/groupContext.jsx';
 
 function App() {
   const { groupList, setGroupList, selectedGroup, setSelectedGroup } = useContext(GroupContext);
