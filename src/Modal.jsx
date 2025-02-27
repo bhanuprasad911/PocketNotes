@@ -26,7 +26,7 @@ function Modal({ closeModal }) {
       return updatedList;
     });
 
-    console.log("Group created and inserted successfully", newGroup);
+    // console.log("Group created and inserted successfully", newGroup);
 
     setGrpname("");
     setgrpclr("");

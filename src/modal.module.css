@@ -117,4 +117,8 @@ label{
         left: 0%;
 
     }
+    .closeButton{
+        left: 80%;
+        top: 5%;
+    }
 }
