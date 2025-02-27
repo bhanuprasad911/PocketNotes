@@ -89,8 +89,8 @@ function App() {
                 <h2 className={style.groupHeading}>{group.name}</h2>
               </button>
             ))}
-            <button className={style.button} onClick={() => setisModalOpen(true)}>+</button>
           </div>
+            <button className={style.button} onClick={() => setisModalOpen(true)}>+</button>
         </div>
 
         {/* RIGHT SIDE (Notes) */}

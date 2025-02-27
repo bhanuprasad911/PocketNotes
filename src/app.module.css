@@ -239,8 +239,8 @@
     background-color: rgb(21, 0, 140);
     /* padding: 1.5rem;
      */
-     height: 10%;
-     width: 15%;
+     height: 9%;
+     width: 4%;
      /* padding: 8%; */
     border: none;
     border-radius: 50%;
@@ -250,7 +250,7 @@
     /* bottom: 100%;
      */
      top: 85%;
-    left: 70%;
+    left: 18%;
     font-size: 3.5rem;
     text-align: center;
 }
