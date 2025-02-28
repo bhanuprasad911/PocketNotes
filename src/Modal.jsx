@@ -22,11 +22,10 @@ function Modal({ closeModal }) {
     setGroup(newGroup);
     setGroupList((prev) => {
       const updatedList = [...prev, newGroup];
-      localStorage.setItem("groupList", JSON.stringify(updatedList)); // Store updated list
+      localStorage.setItem("groupList", JSON.stringify(updatedList));
       return updatedList;
     });
 
-    // console.log("Group created and inserted successfully", newGroup);
 
     setGrpname("");
     setgrpclr("");

@@ -10,7 +10,7 @@ function App() {
   const { groupList, setGroupList, selectedGroup, setSelectedGroup } = useContext(GroupContext);
   const [isModalOpen, setisModalOpen] = useState(false);
   const [newnotes, setNewnote] = useState('');
-  const [showRight, setShowRight] = useState(false); // State for responsive behavior
+  const [showRight, setShowRight] = useState(false);
 
   function groupHead(name) {
     if (!name || typeof name !== 'string') return '';
@@ -71,7 +71,7 @@ function App() {
   return (
     <>
       <div className={`${style.main} ${showRight ? style.showRight : ''}`}>
-        {/* LEFT SIDE (Group List) */}
+       
         <div className={style.left}>
           <h1 className={style.heading}>Pocket Notes</h1>
           <div className={style.groups}>
@@ -81,7 +81,7 @@ function App() {
                 className={style.innergroup}
                 onClick={() => {
                   setSelectedGroup(group);
-                  setShowRight(true); // Show right section on mobile
+                  setShowRight(true); 
                 }}
               >
                 <div className={style.groupimg} style={{ backgroundColor: group.color }}>
@@ -94,7 +94,7 @@ function App() {
             <button className={style.button} onClick={() => setisModalOpen(true)}>+</button>
         </div>
 
-        {/* RIGHT SIDE (Notes) */}
+        
         <div className={`${style.right} ${showRight ? style.showRight : ''}`}>
           {!selectedGroup ? (
             <div className={style.nogroup}>
