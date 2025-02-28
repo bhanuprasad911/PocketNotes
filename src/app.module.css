@@ -98,12 +98,12 @@
     margin-right: 1%;
 }
 .encrypt{
-    width: 16%;
+    width: 28%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    top: 100%;
+    top: 60%;
 
 }
 
@@ -159,8 +159,8 @@
     flex-direction: column;
 }
 .notesLogo{
-    height: 70%;
-    width: 40%;
+    height: 100%;
+    width: 60%;
 }
 .groups{
     width: 100%;
@@ -250,6 +250,9 @@
     width: 85%;
     width: 100%;
     background-color: rgb(218, 229, 245);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .left {
     width: 25%;
