@@ -81,6 +81,7 @@
     height: 67%;
     box-sizing: border-box;
     overflow-y: auto;
+    width: 100%;
 }
 .groupHeading{
     color: black;
