@@ -125,6 +125,7 @@
     background-color: white;
     box-shadow: 0px 0px 10px grey;
     margin: 1.5% 2% 0% 2%;
+    width: 96%;
 }
 .notestext {
     white-space: pre-wrap; 
