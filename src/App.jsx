@@ -1,6 +1,7 @@
 import { useState, useEffect, useContext } from 'react';
 import firstImage from '/image-removebg-preview 1.png';
 import sendImg from '/Vector.png';
+import lockImg from '/image.png';
 import Modal from './Modal';
 import style from './app.module.css';
 import { GroupContext } from './context/groupContext.jsx';
@@ -104,7 +105,12 @@ function App() {
                 <br />
                 Use pocket notes on up to 4 linked devices and 1 mobile phone.
               </p>
+              <div className={style.encrypt}>
+                <img className={style.encryptimg} src={lockImg} alt="lock" />
+                <p className={style.encryptText}>end-to-end encryption</p>
+              </div>
             </div>
+            
           ) : (
             <>
               <div className={style.noteHead}>
